@@ -78,3 +78,22 @@ display: none;
 width: 100%;
 }
 }
+@media only screen and (max-width: 600px) {
+.left-sidebar, .right-sidebar {
+display: none;
+}
+}
+
+@media only screen and (max-width: 600px) {
+.sidebar-toggle-button {
+display: block;
+background-color: #ccc;
+padding: 5px 10px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.left-sidebar, .right-sidebar {
+display: none;
+}
+}
