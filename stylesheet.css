@@ -68,6 +68,12 @@ background-color: #ccc;
 .left-sidebar {
 display: block;
 }
+.post.middle {
+width: calc(100% - 400px);
+}
+.post.right {
+margin-left: 200px;
+}
 }
 
 @media only screen and (max-width: 600px) {
