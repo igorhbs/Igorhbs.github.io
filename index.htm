@@ -1,12 +1,26 @@
 <html>
-  <head>
-    <title>Consulta de Senadores por Partido</title>
-    <script src="https://d3js.org/d3.v6.js"></script>
-  </head>
-  <body>
-    <h1>Consulta de Senadores por Partido</h1>
-    <div id="chart"></div>
-    <script src="consulta-senadores-por-partido.js"></script>
-  </body>
-</html>
-<!-- Fim do HTML -->
+
+<head>
+  <title>Google Trends Scraper</title>
+  <style>
+    #chart {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+
+  <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<body>
+  <div>
+    <h3>Google Trends Scraper</h3>
+    <hr />
+    <p>Enter a query to see the main queries related to it and the subregions where it is most searched:</p>
+    <input id="query" type="text" placeholder="Query" />
+    <button type="button" onclick="updateData()">Update</button>
+  </div>
+
+  <div>
+    <svg id="chart"></svg>
+  </div>
